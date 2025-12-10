@@ -4,15 +4,15 @@ import { useState } from 'react'
 const ControlForm = () => {
   const [input, setInput] = useState({username: "", password: ""})
 
-  function handleChange(e){
-    const {name, value} = e.target
+  // function handleChange(e){
+  //   const {name, value} = e.target
 
-    setInput((prev) => {
-      const updated = {...prev, [name]: value }
-      // console.log(updated)
-      return updated
-    })   
-  }
+  //   setInput((prev) => {
+  //     const updated = {...prev, [name]: value }
+  //     // console.log(updated)
+  //     return updated
+  //   })   
+  // }
 
     function handleSubmit(e){
       e.preventDefault()
